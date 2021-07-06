@@ -3,11 +3,10 @@
  * @return {boolean}
  */
 var stoneGame = function(piles) {
-
-    const num = fn(piles, true);
     
-    return num;
-    function fn (stones, isFirst) {
+    return getMaximum(piles, true) > (Math.max(...piles) / 2);
+    
+    function getMaximum(stones, isFirst) {
         const n = stones.length;
         const start = stones[0];
         const end = stones[n - 1];
@@ -23,12 +22,9 @@ var stoneGame = function(piles) {
             
         }
         
-        const startMax = pivot + fn(stones.slice(1), !isFirst);
-        const endMax = pivot + fn(stones.slice(-1), !isFirst);
+        const startMax = pivot + getMaximum(stones.slice(1), !isFirst);
+        const endMax = pivot + getMaximum(stones.slice(-1), !isFirst);
         
-        console.log(startMax, endMax)
         return Math.max(startMax, endMax);
-    }
-    
-    
+    }  
 };
