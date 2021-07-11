@@ -6,7 +6,7 @@
 var findKthPositive = function(arr, k) {
     let n = k;
     for (let i = 0; i < arr.length; i++) {
-        const prevNumber = i === 0 ? 0 : arr[i - 1]
+        const prevNumber = arr[i - 1] || 0;
         const missingCount = arr[i] - prevNumber - 1;
         
         if (n <= missingCount) {
