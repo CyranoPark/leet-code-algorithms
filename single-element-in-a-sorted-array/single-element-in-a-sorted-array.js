@@ -4,7 +4,7 @@
  */
 var singleNonDuplicate = function(nums) {
   
-    return binarySearch(0, nums.length - 1)
+    return binarySearch(0, nums.length - 1);
     
     function binarySearch(from, to) {
         const pivot = from + Math.floor((to - from) / 2);
