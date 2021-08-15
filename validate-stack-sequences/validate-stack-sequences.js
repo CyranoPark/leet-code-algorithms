@@ -16,7 +16,6 @@ var validateStackSequences = function(pushed, popped) {
         }
     }
     
-    console.log(result);
     return !result.length;
     
 };
