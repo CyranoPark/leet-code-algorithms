@@ -4,7 +4,7 @@
  * @return {boolean}
  */
 var backspaceCompare = function(s, t) {
-    console.log(fn(s), fn(t)) 
+
     return fn(s) === fn(t);
     
     function fn (str) {
