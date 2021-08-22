@@ -15,10 +15,6 @@ var largestNumber = function(nums) {
 
     
     function removeZero(nums) {
-        // if (nums.length < 2) {
-        //     return nums;
-        // }
-        
         for (let i = 0; i < nums.length - 1; i++) {
             if (nums[i] === 0) {
                 nums[i] = '';
