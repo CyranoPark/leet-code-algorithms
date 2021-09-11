@@ -14,14 +14,10 @@ var ParkingSystem = function(big, medium, small) {
  * @return {boolean}
  */
 ParkingSystem.prototype.addCar = function(carType) {
-    // if (!carType) return false;
-
     if (this[carType]) {
         this[carType]--;
         return true;
     }
-    
-    // return this.addCar(carType - 1);
     
     return false;
 };
