@@ -19,7 +19,6 @@ var partition = function(s) {
         for (let i = start; i < s.length; i++) {
             const string = s.slice(start, i + 1);
             const reversed = string.split('').reverse().join('');
-            console.log(string);
             
             if (string === reversed) {
                 const newArr = arr.slice();
