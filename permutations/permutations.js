@@ -9,13 +9,13 @@ var permute = function(nums) {
     
     return result;
     
-    function fn(arr, permutations) {
-        if (permutations.length === nums.length) {
-            result.push(permutations);
+    function fn(arr, permutation) {
+        if (permutation.length === nums.length) {
+            result.push(permutation);
             return;
         }
         for(let i = 0; i < arr.length; i++) {
-            fn(arr.filter(item => item !== arr[i]), [...permutations, arr[i]])
+            fn(arr.filter(item => item !== arr[i]), [...permutation, arr[i]])
         }
     }
 };
