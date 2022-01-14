@@ -31,6 +31,6 @@ var countBattleships = function(board) {
             return;
         }
     }
-    
+    console.log(board)
     return count;
 };
