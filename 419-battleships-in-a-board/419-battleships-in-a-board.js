@@ -11,7 +11,7 @@ var countBattleships = function(board) {
                 search(i, j);
                 count++;
             }
-            if (col === 'O') {
+            if (board[i][j] === 'O') {
                 board[i][j] = 'X';
             }
         });
@@ -31,6 +31,6 @@ var countBattleships = function(board) {
             return;
         }
     }
-    console.log(board)
+
     return count;
 };
