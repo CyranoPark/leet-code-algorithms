@@ -42,6 +42,6 @@ var calculate = function(s) {
         
         lastOperator = integer;
     }
-console.log(stack)
+
     return stack.reduce((acc, num) => acc + num, 0);
 };
